@@ -15,4 +15,3 @@ COPY Gemfile Gemfile.lock ./
 RUN bundle install || true
 
 EXPOSE 3000
-CMD ["rails", "server", "-b", "0.0.0.0"]
