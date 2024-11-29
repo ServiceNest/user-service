@@ -71,6 +71,8 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
     bcrypt (3.1.20)
     bootsnap (1.18.4)
       msgpack (~> 1.2)
@@ -99,6 +101,8 @@ GEM
     irb (1.14.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
+    json-schema (5.1.0)
+      addressable (~> 2.8)
     jsonapi-renderer (0.2.2)
     loofah (2.22.0)
       crass (~> 1.0.2)
@@ -128,6 +132,7 @@ GEM
     pg (1.5.8)
     psych (5.1.2)
       stringio
+    public_suffix (6.0.1)
     puma (5.6.9)
       nio4r (~> 2.0)
     racc (1.8.1)
@@ -184,6 +189,17 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.13.1)
+    rswag-api (2.16.0)
+      activesupport (>= 5.2, < 8.1)
+      railties (>= 5.2, < 8.1)
+    rswag-specs (2.16.0)
+      activesupport (>= 5.2, < 8.1)
+      json-schema (>= 2.2, < 6.0)
+      railties (>= 5.2, < 8.1)
+      rspec-core (>= 2.14)
+    rswag-ui (2.16.0)
+      actionpack (>= 5.2, < 8.1)
+      railties (>= 5.2, < 8.1)
     simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -213,6 +229,9 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.0)
   rspec-rails (~> 5.0)
+  rswag-api
+  rswag-specs
+  rswag-ui
   simplecov
   tzinfo-data
 
